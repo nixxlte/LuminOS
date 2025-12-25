@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Code by NyanRay64 =3
+
 arg=$1
 
 if [ "$arg" = "update" ]; then
