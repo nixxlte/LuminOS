@@ -6,5 +6,5 @@
 sudo su
 nala update && nala upgrade
 flatpak update
-cd ~/container/LuminOS # This is temporary =3
+cd ~/container/LuminOS # This is temporary =3 (probably)
 git pull

@@ -96,7 +96,7 @@ alias l='ls -CF'
 alias install='sudo nala'
 alias apt='nala'
 
-# some SDK calls
+# some lumin calls
 alias sdkshell='cd /usr/lumin/ && ./overlay.sdkx'
 
 # Add an "alert" alias for long running commands.  Use like so:
