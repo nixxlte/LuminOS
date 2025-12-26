@@ -5,7 +5,6 @@
 
 # Code by NyanRay64 =3
 
-sudo su
 nala update && nala upgrade
 flatpak update
 cd ~/container/LuminOS # This is temporary =3 (probably)

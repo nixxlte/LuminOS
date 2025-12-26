@@ -4,7 +4,7 @@
 
 arg=$1
 
-return() {
+return() { # This thing is a bit complex (at least for me, sorry im a C# programmer, not a SH) but this works well =D
     if [ "$2" = "" ] && [ "$3" = "" ]; then
         echo "Usage: $1 <command>"
     elif [ "$2" != "" ] &&  [ "$3" = "" ]; then
@@ -14,9 +14,20 @@ return() {
     fi
 }
 
+catch() {
+    if [ "$2" = "" ]; then
+        echo "Error, code: $1"
+    elif [ "$2" != "" ]; then
+        echo "Error, message: $2, code: $1"
+    fi
+}
+
 if [ "$arg" = "update" ]; then
     echo "updating"
-    echo " this page is intentionally blank for now" # this will run the update.sh
+    chmod +x ~/container/LuminOS/usr/lumin/update.sh
+    ./~/container/LuminOS/usr/lumin/update.sh
+    #chmod +x update.sh
+    #./update.sh
 elif [ "$arg" = "" ]; then
     return lumin
     echo "Type help to see all avaiable commands"
@@ -26,8 +37,8 @@ elif [ "$arg" = "help" ]; then
     echo "start: start a internal program (like SDK shell)"
 elif [ "$arg" = "start" ]; then
     if [ "$2" = "sdk" ]; then
-        chmod +x ~/container/usr/lumin/overlay.sdkx
-        ./~/container/usr/lumin/overlay.sdkx
+        chmod +x ~/container/LuminOS/usr/lumin/overlay.sdkx
+        ./~/container/LuminOS/usr/lumin/overlay.sdkx
     elif [ "$2" = "" ]; then
         return lumin start
     fi
