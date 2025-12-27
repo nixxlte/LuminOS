@@ -42,6 +42,8 @@ elif [ "$arg" = "start" ]; then
     elif [ "$2" = "" ]; then
         return lumin start
     fi
+elif [ "$arg" = "catch" ]; then
+    echo "$2"
 else
     echo "this command was not found. maybe try help?"
 fi
