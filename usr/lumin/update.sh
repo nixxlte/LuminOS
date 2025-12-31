@@ -7,5 +7,5 @@
 
 nala update && nala upgrade
 flatpak update
-cd ~/container/LuminOS # This is temporary =3 (probably)
+cd ~/container/LuminOS # Immutable container
 git pull
