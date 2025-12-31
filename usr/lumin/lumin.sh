@@ -28,6 +28,10 @@ if [ "$arg" = "update" ]; then
     ./~/container/LuminOS/usr/lumin/update.sh
     #chmod +x update.sh
     #./update.sh
+elif [ "$arg" = "fix" ] then
+    echo "Reinstalling main container (this may take a while...)"
+    chmod +x ~/container/LuminOS/usr/lumin/fix.sh
+    ./~/container/LuminOS/usr/lumin/fix.sh
 elif [ "$arg" = "" ]; then
     return lumin
     echo "Type help to see all avaiable commands"
@@ -38,7 +42,7 @@ elif [ "$arg" = "help" ]; then
 elif [ "$arg" = "start" ]; then
     if [ "$2" = "sdk" ]; then
         chmod +x ~/container/LuminOS/usr/lumin/overlay.sdkx
-        ./~/container/LuminOS/usr/lumin/overlay.sdkx
+        ./~/container/LuminOS/usr/lumin/overlay.sdkx $3
     elif [ "$2" = "" ]; then
         return lumin start
     fi
