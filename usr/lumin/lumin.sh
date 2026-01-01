@@ -13,7 +13,6 @@ return() { # This thing is a bit complex (at least for me, sorry im a C# program
         echo "Usage: $1 $2 $3 <command>"
     fi
 }
-
 catch() {
     if [ "$2" = "" ]; then
         echo "Error, code: $1"
@@ -21,7 +20,6 @@ catch() {
         echo "Error, message: $2, code: $1"
     fi
 }
-
 if [ "$arg" = "update" ]; then
     echo "updating"
     chmod +x ~/container/LuminOS/usr/lumin/update.sh

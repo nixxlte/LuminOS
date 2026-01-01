@@ -2,6 +2,7 @@
 
 # Code by NyanRay64 =3
 
+echo "Fixing LuminContainer"
 sudo rm -rf ~/container/LuminOS
 cd ~/container
 sudo apt update && sudo apt install git -y
