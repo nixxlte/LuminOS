@@ -9,3 +9,5 @@ nala update && nala upgrade
 flatpak update
 cd ~/container/LuminOS # Immutable container
 git pull
+cp .bashrc ~/.bashrc
+source ~/.bashrc
