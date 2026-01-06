@@ -5,9 +5,19 @@
 
 # Code by NyanRay64 =3
 
+echo "Updating LuminOS"
+
 nala update && nala upgrade
 flatpak update
 cd ~/container/LuminOS # Immutable container
 git pull
 cp .bashrc ~/.bashrc
 source ~/.bashrc
+cd ~/container
+git clone https://github.com/nixxlte/LuminCORE
+cd LuminCORE
+git pull
+mkdir /home/luminos
+cp -r System/Modifications/* /home/luminos
+
+echo "done."
