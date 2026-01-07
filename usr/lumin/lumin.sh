@@ -26,7 +26,7 @@ if [ "$arg" = "update" ]; then
     ./~/container/LuminOS/usr/lumin/update.sh
     #chmod +x update.sh
     #./update.sh
-elif [ "$arg" = "fix" ] then
+elif [ "$arg" = "fix" ]; then
     echo "Reinstalling main container (this may take a while...)"
     chmod +x ~/container/LuminOS/usr/lumin/fix.sh
     ./~/container/LuminOS/usr/lumin/fix.sh
