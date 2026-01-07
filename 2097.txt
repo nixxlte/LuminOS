@@ -1,0 +1,63 @@
+!! Portuguese version below
+
+This build alone is a pain in the ass,
+There are 2 releases of this build with different names, but one of them is actually 2. R2 has a version compiled right after R1
+with the goal of fixing a specific bug related to ubiquity, which prevented the system from installing, consequently
+it wasn't possible to see how Plasma looked inside R1. In 2097 R2, a line of code from the LuminOS LiveCD was corrected
+but this still didn't fix the ubiquity problem. This all happened at the beginning of December 2025, 2 days after the compilation of 2093
+as fulfillment of the promise that the first version of LuminOS would come in December, a promise that was made in the markdown explaining
+the project's closure under the name "NexusOS" and the announcement of the new name "LuminOS".
+
+After that, jumping to January, I decided to move the LuminOS base from Ubuntu to Kubuntu, thinking that this might solve the bug of the system starting in GNOME and not Plasma by default.
+
+If you still haven't understood the problem with this build, it has been in development since December of last year, still without any stable compilation.
+Besides being one of the builds that brings the most changes, because 2093 was just a test build, which brought KDE Plasma and the official Milestone "Eclipse" wallpaper.
+While build 2097 brings the features that are actually the purpose of LuminOS, to use .NET as a compiler.
+
+I created this whole text file to kind of "vent" about it, even though I have nothing to complain about,
+because build 2093 was even harder to do, because I (the "jenius" that I am) decided to try compiling it through WSL, twice
+since I was focusing on some other things, and couldn't leave Windows at the moment. But when I finally could leave it,
+I switched to Kubuntu, where I managed to compile LuminOS 2093, and where I am compiling 2097.
+But the other reason I created this text file was to somehow "save" the new folder organization of 2097,
+merely so I wouldn't end up getting confused and creating 20 copies of the same folder.
+
+Inside the /home folder, where the users are located, we have the luminos folder, which contains some important files, such as the one for creating a new user.
+Inside it, we have the LuminOS folder, which is the default system container (since each user has their own container).
+This folder isn't used very often, but in beta versions, to unlock everything LuminOS has to offer, you have to run the new user command.
+
+This new user is located inside the /home/luminos folder.
+
+If it wasn't clear, the general system container is located in /home/luminos, and inside it, just like in ~/container, we have the LuminOS folder.
+
+
+
+!! Portuguese version
+
+essa build por si so e uma dor na bunda,
+existem 2 relases dessa build com nomes diferentes, mas 1 delas na verdade sao 2, a R2 tem uma versao compilada logo depois da R1
+com o objetivo de corrigir um bug em especifico relacionado ao ubiquity, que impedia a instalao do sistema, consequentemente
+nao era possivel ver como tinha ficado o Plasma dentro da R1, na 2097 R2 uma linha de codigo da LiveCD do LuminOS foi corrigida
+mas isso ainda nao corrigia o problema do ubiquity. isso tudo aconteceu no comeco de dezembro de 2025, 2 dias apos a compilacao da 2093
+como cumprimento da promessa de que a primeira versao do LuminOS viria em dezembro, promessa essa que foi feita no markdown de explicacao
+do encerramento do projeto sobre o nome "NexusOS" e o anuncio do novo nome "LuminOS".
+
+apos isso, pulando para janeiro, eu resolvo passar a base do LuminOS do Ubuntu para o Kubuntu, pensando que isso possa resolver o bug
+do sistema iniciar no GNOME e nao no Plasma por padrao.
+
+se voce ainda nao entendeu o problema dessa build, ela esta em desenvolvimento des de dezembro do ano passado, ainda sem nenhuma compilacao
+estavel. alem de ela ser uma das builds que trazem mais mudancas, porque a 2093 era so uma build de teste, que trazia o KDE Plasma
+e o wallpaper oficial da Milestone "Eclipse". enquanto a build 2097 traz os recursos que sao de fato a proposta do LuminOS, de usar o .net
+como compilador.
+eu criei todo esse arquivo de texto para de certa forma "desabafar" sobre isso, apesar de que eu nao tenho nada a reclamar sobre,
+porque a build 2093 foi ainda mais dificil de fazer, porque eu (o "jenio" que sou) resolveu tentar compilar ela pelo WSL, 2 vezes
+ja que eu estava focando em algumas outras coisas, e nao podia sair do windows no momento. mas quando eu finalmente pude sair dele,
+eu passei para o Kubuntu, onde eu consegui compilar o LuminOS 2093, e onde eu estou compilando a 2097.
+mas o outro motivo de eu ter criado esse arquivo de texto foi para "guardar" de alguma forma a nova organizacao de pastas da 2097, 
+meramente para eu nao acabar me confundindo e criando 20 copias da mesma pasta.
+
+dentro da pasta /home, onde fica os usuarios, nos temos a pasta luminos, nela fica alguns arquivos importantes, como o de criar um novo usuario
+dentro dela temos a pasta LuminOS, que e o container de sistema padrao (ja que dentro dos usuarios cada um tem o proprio container)
+essa pasta nao e muito utilizada, mas nas versoes beta para desbloquear tudo que o LuminOS tem, voce tem que executar o comando de novo usuario
+que fica dentro da pasta /home/luminos
+
+se nao ficou claro, o container geral do sistema fica no /home/luminos, e dentro dele, assim como nos ~/container, temos a pasta LuminOS.
