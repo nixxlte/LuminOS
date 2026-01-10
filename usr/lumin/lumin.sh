@@ -46,6 +46,8 @@ elif [ "$arg" = "start" ]; then
     fi
 elif [ "$arg" = "catch" ]; then
     echo "$2"
+elif [ "$arg" = "rollback" ]; then
+    echo "This option intentionally doesnt exist yet"
 else
     echo "this command was not found. maybe try help?"
 fi
