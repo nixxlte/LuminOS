@@ -9,7 +9,7 @@ echo "Updating LuminOS"
 
 nala update && nala upgrade
 flatpak update
-cd ~/container/LuminOS # Immutable container
+cd ~/container/LuminOS # Immutable Lumin container
 git pull
 cp .bashrc ~/.bashrc
 source ~/.bashrc
