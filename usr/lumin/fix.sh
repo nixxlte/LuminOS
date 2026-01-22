@@ -21,5 +21,9 @@ mkdir /home/luminos
 cp -r System/Modifications/* /home/luminos
 cd ~/container
 rm -rf ~/container/LuminOS
+git clone https://github.com/nixxlte/LuminOS
+cd LuminOS/Root/
+cp .bashrc ~/.bashrc
+source ~/.bashrc
 
 echo "Done. Please restart the computer to apply all changes."
