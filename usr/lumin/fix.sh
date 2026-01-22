@@ -12,12 +12,14 @@ cp .bashrc ~/.bashrc
 source ~/.bashrc
 cd ~/container
 ls
-git rm -rf ~/container/LuminCORE
+rm -rf ~/container/LuminCORE
 git clone https://github.com/nixxlte/LuminCORE
 cd LuminCORE/System/Modifications
 cp extensions.md ~/container
 cd .. && cd ..
 mkdir /home/luminos
 cp -r System/Modifications/* /home/luminos
+cd ~/container
+rm -rf ~/container/LuminOS
 
 echo "Done. Please restart the computer to apply all changes."
