@@ -61,3 +61,10 @@ essa pasta nao e muito utilizada, mas nas versoes beta para desbloquear tudo que
 que fica dentro da pasta /home/luminos
 
 se nao ficou claro, o container geral do sistema fica no /home/luminos, e dentro dele, assim como nos ~/container, temos a pasta LuminOS.
+
+!! portuguese exclusive part
+
+provavelmente eu vou acabar compilando a 2097 somente como uma versao com o LuminSDK build 2097R2 compilado, e ignorar completamente o container
+ate a build 3020, que eu vou trocar o numero milhar das builds, por causa do Ubuntu (e Kubuntu) 26.04 LTS, que é para ser lancado em 3 meses
+de quando eu estou escrevendo isso (final de janeiro de 2026)
+isso por si so é um motivo de eu querer esperar para fazer uma build mais ou menos completa, considerado o que se tem pronto ate agora
