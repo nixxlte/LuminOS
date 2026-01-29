@@ -13,7 +13,7 @@ return() { # This thing is a bit complex (at least for me, sorry im a C# program
         echo "Usage: $1 $2 $3 <command>"
     fi
 }
-catch() {
+catch() { # Catch error, nothing complex
     if [ "$2" = "" ]; then
         echo "Error, code: $1"
     elif [ "$2" != "" ]; then
@@ -39,8 +39,12 @@ elif [ "$arg" = "help" ]; then
     echo "start: start a internal program (like SDK shell)"
 elif [ "$arg" = "start" ]; then
     if [ "$2" = "sdk" ]; then
-        chmod +x ~/container/LuminOS/usr/lumin/overlay.sdkx
-        ./~/container/LuminOS/usr/lumin/overlay.sdkx $3
+        # chmod +x ~/container/LuminOS/usr/lumin/overlay.sdkx
+        # ./~/container/LuminOS/usr/lumin/overlay.sdkx $3
+        if [ "$3" != "" ]; then
+            chmod +x ~/container/LuminOS/usr/lumin/overlay.sdkx
+            ./~/container/LuminOS/usr/lumin/overlay.sdkx $3
+        fi
     elif [ "$2" = "" ]; then
         return lumin start
     fi

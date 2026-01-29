@@ -100,6 +100,7 @@ alias apt='nala'
 # alias sdkshell='cd /usr/lumin/ && ./overlay.sdkx'
 alias lumin='./~/container/LuminOS/usr/lumin/lumin.sh'
 alias lmver='lumin start sdk lmver'
+alias echo='lumin start sdk echo'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
