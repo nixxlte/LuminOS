@@ -97,7 +97,7 @@ alias install='sudo nala'
 alias apt='nala'
 
 # some lumin calls
-alias sdkshell='cd /usr/lumin/ && ./overlay.sdkx'
+# alias sdkshell='cd /usr/lumin/ && ./overlay.sdkx'
 alias lumin='./~/container/LuminOS/usr/lumin/lumin.sh'
 alias lmver='lumin start sdk lmver'
 
