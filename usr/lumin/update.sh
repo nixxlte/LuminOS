@@ -11,13 +11,14 @@ nala update && nala upgrade
 flatpak update
 cd ~/container/LuminOS # Immutable Lumin container
 git pull
+cd Root
 cp .bashrc ~/.bashrc
 source ~/.bashrc
 cd ~/container
 git clone https://github.com/nixxlte/LuminCORE
 cd LuminCORE
 git pull
-mkdir /home/luminos
+sudo mkdir /home/luminos
 cp -r System/Modifications/* /home/luminos
 
 echo "done."
