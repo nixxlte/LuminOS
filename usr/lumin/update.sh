@@ -9,9 +9,13 @@ echo "Updating LuminOS"
 
 nala update && nala upgrade
 flatpak update
-cd ~/container/LuminOS # Immutable Lumin container
-git pull
-cd Root
+#cd ~/container/LuminOS # Immutable Lumin container
+#git pull
+cd ~/container/github
+git clone https://github.com/nixxlte/LuminOS
+cd LuminOS && cp * ~/container/LuminOS
+cd .. && rm -rf LuminOS
+cd ~/container/LuminOS/Root
 cp .bashrc ~/.bashrc
 source ~/.bashrc
 cd ~/container
@@ -20,5 +24,8 @@ cd LuminCORE
 git pull
 sudo mkdir /home/luminos
 cp -r System/Modifications/* /home/luminos
+cd /home/luminos
+rm -rf Overlay.sdkx
+curl -fsSL https://github.com/nixxlte/LuminCORE/releases/download/LuminOS%22Eclipse%22/Overlay.sdkx -O
 
 echo "done."
