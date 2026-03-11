@@ -18,10 +18,12 @@ cd .. && rm -rf LuminOS
 cd ~/container/LuminOS/Root
 cp .bashrc ~/.bashrc
 source ~/.bashrc
-cd ~/container
+rm -rf ~/container/LuminCORE/*
+cd ~/container/github
 git clone https://github.com/nixxlte/LuminCORE
 cd LuminCORE
-git pull
+cp * ~/container/LuminCORE
+cd ~/container/LuminCORE/
 sudo mkdir /home/luminos
 cp -r System/Modifications/* /home/luminos
 cd /home/luminos
